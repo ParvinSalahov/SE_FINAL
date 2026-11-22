@@ -57,6 +57,281 @@
       ],
       "answer": 2,
       "explanation": "The usual model counts seven continents."
+    },
+    {
+      "text": "Which is the largest ocean on Earth?",
+      "choices": [
+        "Atlantic",
+        "Indian",
+        "Arctic",
+        "Pacific"
+      ],
+      "answer": 3,
+      "explanation": "The Pacific Ocean covers about a third of the Earth's surface."
+    },
+    {
+      "text": "At what temperature does water boil at sea level?",
+      "choices": [
+        "90 °C",
+        "100 °C",
+        "110 °C",
+        "212 °C"
+      ],
+      "answer": 1,
+      "explanation": "Water boils at 100 °C (212 °F) at standard sea-level pressure."
+    },
+    {
+      "text": "Which planet is known as the Red Planet?",
+      "choices": [
+        "Venus",
+        "Mars",
+        "Mercury",
+        "Saturn"
+      ],
+      "answer": 1,
+      "explanation": "Iron oxide on its surface gives Mars a reddish colour."
+    },
+    {
+      "text": "Which is the longest river in Europe?",
+      "choices": [
+        "Danube",
+        "Volga",
+        "Rhine",
+        "Dnieper"
+      ],
+      "answer": 1,
+      "explanation": "The Volga is about 3,500 km long."
+    },
+    {
+      "text": "Who painted the Mona Lisa?",
+      "choices": [
+        "Michelangelo",
+        "Raphael",
+        "Leonardo da Vinci",
+        "Vincent van Gogh"
+      ],
+      "answer": 2,
+      "explanation": "Leonardo da Vinci painted the Mona Lisa in the early 1500s."
+    },
+    {
+      "text": "What is the hardest natural substance?",
+      "choices": [
+        "Gold",
+        "Quartz",
+        "Iron",
+        "Diamond"
+      ],
+      "answer": 3,
+      "explanation": "Diamond is the hardest naturally occurring material."
+    },
+    {
+      "text": "In which year did World War II end?",
+      "choices": [
+        "1918",
+        "1939",
+        "1945",
+        "1950"
+      ],
+      "answer": 2,
+      "explanation": "World War II ended in 1945."
+    },
+    {
+      "text": "Which is the largest country in the world by area?",
+      "choices": [
+        "Canada",
+        "Russia",
+        "China",
+        "United States"
+      ],
+      "answer": 1,
+      "explanation": "Russia covers more than 17 million square kilometres."
+    },
+    {
+      "text": "Which gas do plants absorb for photosynthesis?",
+      "choices": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Hydrogen"
+      ],
+      "answer": 2,
+      "explanation": "Plants take in carbon dioxide and release oxygen."
+    },
+    {
+      "text": "What is the approximate speed of light?",
+      "choices": [
+        "300 km/s",
+        "3,000 km/s",
+        "300,000 km/s",
+        "3,000,000 km/s"
+      ],
+      "answer": 2,
+      "explanation": "Light travels at about 300,000 km per second in a vacuum."
+    },
+    {
+      "text": "Who developed the theory of relativity?",
+      "choices": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo Galilei",
+        "Niels Bohr"
+      ],
+      "answer": 1,
+      "explanation": "Albert Einstein published the theory of relativity in the early 20th century."
+    },
+    {
+      "text": "What is the smallest prime number?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "2 is the smallest prime and the only even prime."
+    },
+    {
+      "text": "What is the currency of Japan?",
+      "choices": [
+        "Yuan",
+        "Won",
+        "Yen",
+        "Ringgit"
+      ],
+      "answer": 2,
+      "explanation": "Japan uses the yen."
+    },
+    {
+      "text": "How many bones does an adult human body have?",
+      "choices": [
+        "186",
+        "206",
+        "226",
+        "256"
+      ],
+      "answer": 1,
+      "explanation": "An adult has 206 bones."
+    },
+    {
+      "text": "Which organ pumps blood through the human body?",
+      "choices": [
+        "Liver",
+        "Lungs",
+        "Heart",
+        "Kidneys"
+      ],
+      "answer": 2,
+      "explanation": "The heart pumps blood through the circulatory system."
+    },
+    {
+      "text": "What is the highest mountain above sea level?",
+      "choices": [
+        "Mount Everest",
+        "K2",
+        "Kangchenjunga",
+        "Mont Blanc"
+      ],
+      "answer": 0,
+      "explanation": "Mount Everest rises about 8,849 m above sea level."
+    },
+    {
+      "text": "Which language has the most native speakers?",
+      "choices": [
+        "English",
+        "Spanish",
+        "Hindi",
+        "Mandarin Chinese"
+      ],
+      "answer": 3,
+      "explanation": "Mandarin Chinese has the most native speakers."
+    },
+    {
+      "text": "Who was the first person to walk on the Moon?",
+      "choices": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Michael Collins"
+      ],
+      "answer": 0,
+      "explanation": "Neil Armstrong stepped onto the Moon on 20 July 1969."
+    },
+    {
+      "text": "What is the capital of Australia?",
+      "choices": [
+        "Sydney",
+        "Canberra",
+        "Melbourne",
+        "Perth"
+      ],
+      "answer": 1,
+      "explanation": "Canberra, not Sydney, is the capital of Australia."
+    },
+    {
+      "text": "Which continent has no permanent population?",
+      "choices": [
+        "Australia",
+        "Antarctica",
+        "Europe",
+        "South America"
+      ],
+      "answer": 1,
+      "explanation": "Antarctica has only temporary research station staff."
+    },
+    {
+      "text": "Which planet is closest to the Sun?",
+      "choices": [
+        "Venus",
+        "Mercury",
+        "Earth",
+        "Mars"
+      ],
+      "answer": 1,
+      "explanation": "Mercury orbits closest to the Sun."
+    },
+    {
+      "text": "Which substance has the chemical formula H2O?",
+      "choices": [
+        "Hydrogen peroxide",
+        "Salt",
+        "Oxygen",
+        "Water"
+      ],
+      "answer": 3,
+      "explanation": "H2O is two hydrogen atoms and one oxygen atom: water."
+    },
+    {
+      "text": "Who is usually credited with inventing the telephone?",
+      "choices": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Guglielmo Marconi"
+      ],
+      "answer": 0,
+      "explanation": "Alexander Graham Bell received the first telephone patent in 1876."
+    },
+    {
+      "text": "How many players does one football (soccer) team have on the pitch?",
+      "choices": [
+        "11",
+        "10",
+        "12",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "Each team plays with eleven players, including the goalkeeper."
+    },
+    {
+      "text": "The Caspian Sea is the world's largest what?",
+      "choices": [
+        "Gulf",
+        "Enclosed inland body of water",
+        "River delta",
+        "Strait"
+      ],
+      "answer": 1,
+      "explanation": "The Caspian Sea is the largest enclosed inland body of water."
     }
   ]
 }
