@@ -1,0 +1,62 @@
+{
+  "slug": "general_knowledge",
+  "title": "General Knowledge",
+  "description": "Everyday world knowledge: geography, science, history and culture.",
+  "questions": [
+    {
+      "text": "What is the capital of Azerbaijan?",
+      "choices": [
+        "Ganja",
+        "Baku",
+        "Sumqayit",
+        "Shaki"
+      ],
+      "answer": 1,
+      "explanation": "Baku is the capital and largest city of Azerbaijan."
+    },
+    {
+      "text": "Which is the largest planet in the Solar System?",
+      "choices": [
+        "Saturn",
+        "Neptune",
+        "Jupiter",
+        "Earth"
+      ],
+      "answer": 2,
+      "explanation": "Jupiter is more massive than all the other planets combined."
+    },
+    {
+      "text": "What is the chemical symbol for gold?",
+      "choices": [
+        "Ag",
+        "Au",
+        "Gd",
+        "Go"
+      ],
+      "answer": 1,
+      "explanation": "Au comes from the Latin word 'aurum'."
+    },
+    {
+      "text": "Who wrote the play 'Hamlet'?",
+      "choices": [
+        "Charles Dickens",
+        "Leo Tolstoy",
+        "William Shakespeare",
+        "Mark Twain"
+      ],
+      "answer": 2,
+      "explanation": "Hamlet was written by William Shakespeare around 1600."
+    },
+    {
+      "text": "How many continents are there on Earth?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "The usual model counts seven continents."
+    }
+  ]
+}
