@@ -271,3 +271,56 @@ input[type="text"]:focus { outline: 3px solid var(--primary); outline-offset: 1p
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ---------- Home page ---------- */
+.hero {
+  padding: clamp(1.75rem, 5vw, 3.25rem) clamp(1.25rem, 4vw, 3rem);
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow: var(--shadow);
+}
+.hero .lead { max-width: 34rem; margin-inline: auto; margin-bottom: 1.5rem; }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.hero-actions form { margin: 0; }
+
+.enter-form { max-width: 28rem; margin-inline: auto; }
+.enter-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.enter-row input { flex: 1 1 12rem; width: auto; }
+.enter-row .btn { flex: 0 0 auto; }
+.enter-form .hint { text-align: left; }
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.step {
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.step h2 { font-size: 1.05rem; }
+.step p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.step-num {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.75rem;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-weight: 800;
+}
