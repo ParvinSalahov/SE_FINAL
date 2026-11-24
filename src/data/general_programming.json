@@ -1,0 +1,337 @@
+{
+  "slug": "general_programming",
+  "title": "General Programming",
+  "description": "Core programming concepts: data structures, algorithms, Python, Git and the web.",
+  "questions": [
+    {
+      "text": "What does CPU stand for?",
+      "choices": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Central Program Utility",
+        "Core Processing Updater"
+      ],
+      "answer": 0,
+      "explanation": "CPU stands for Central Processing Unit, the part of a computer that executes instructions."
+    },
+    {
+      "text": "Which data structure follows the LIFO (last in, first out) principle?",
+      "choices": [
+        "Queue",
+        "Linked list",
+        "Array",
+        "Stack"
+      ],
+      "answer": 3,
+      "explanation": "In a stack the last element pushed is the first one popped."
+    },
+    {
+      "text": "Which data structure follows the FIFO (first in, first out) principle?",
+      "choices": [
+        "Stack",
+        "Tree",
+        "Graph",
+        "Queue"
+      ],
+      "answer": 3,
+      "explanation": "In a queue the first element added is the first one removed."
+    },
+    {
+      "text": "What does HTML stand for?",
+      "choices": [
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "HyperTransfer Markup Logic",
+        "Home Tool Markup Language"
+      ],
+      "answer": 0,
+      "explanation": "HTML is the HyperText Markup Language used to structure web pages."
+    },
+    {
+      "text": "Which symbol starts a single-line comment in Python?",
+      "choices": [
+        "//",
+        "#",
+        "--",
+        "/*"
+      ],
+      "answer": 1,
+      "explanation": "Python comments start with # and continue to the end of the line."
+    },
+    {
+      "text": "What is the result of 7 // 2 in Python?",
+      "choices": [
+        "3.5",
+        "3",
+        "4",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "// is floor division, so 7 // 2 equals 3."
+    },
+    {
+      "text": "What is the time complexity of binary search on a sorted array?",
+      "choices": [
+        "O(n)",
+        "O(n log n)",
+        "O(log n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Binary search halves the search range each step, so it takes O(log n) time."
+    },
+    {
+      "text": "What does a compiler do?",
+      "choices": [
+        "Runs a program line by line",
+        "Translates source code into machine code before it runs",
+        "Formats source code",
+        "Stores variables in memory"
+      ],
+      "answer": 1,
+      "explanation": "A compiler translates the whole source code into machine code before execution."
+    },
+    {
+      "text": "Which keyword defines a function in Python?",
+      "choices": [
+        "function",
+        "fun",
+        "def",
+        "define"
+      ],
+      "answer": 2,
+      "explanation": "Functions in Python are defined with the def keyword."
+    },
+    {
+      "text": "What does SQL stand for?",
+      "choices": [
+        "Simple Question Language",
+        "Standard Queue Language",
+        "Sequential Query Logic",
+        "Structured Query Language"
+      ],
+      "answer": 3,
+      "explanation": "SQL is the Structured Query Language used to work with relational databases."
+    },
+    {
+      "text": "Which of these is a version control system?",
+      "choices": [
+        "Docker",
+        "Linux",
+        "Flask",
+        "Git"
+      ],
+      "answer": 3,
+      "explanation": "Git tracks changes to files and lets teams work together on the same code."
+    },
+    {
+      "text": "What is a variable in programming?",
+      "choices": [
+        "A named place in memory that stores a value",
+        "A value that can never change",
+        "A type of loop",
+        "A syntax error"
+      ],
+      "answer": 0,
+      "explanation": "A variable is a name that refers to a stored value."
+    },
+    {
+      "text": "What type does the input() function return in Python?",
+      "choices": [
+        "int",
+        "float",
+        "str",
+        "bool"
+      ],
+      "answer": 2,
+      "explanation": "input() always returns a string, even if the user types digits."
+    },
+    {
+      "text": "Which loop always runs its body at least once?",
+      "choices": [
+        "for",
+        "while",
+        "do-while",
+        "foreach"
+      ],
+      "answer": 2,
+      "explanation": "A do-while loop checks its condition after running the body."
+    },
+    {
+      "text": "What is recursion?",
+      "choices": [
+        "A loop that never ends",
+        "Importing a module",
+        "Copying a variable",
+        "A function that calls itself"
+      ],
+      "answer": 3,
+      "explanation": "Recursion is when a function solves a problem by calling itself on a smaller input."
+    },
+    {
+      "text": "What is an algorithm?",
+      "choices": [
+        "A step-by-step procedure for solving a problem",
+        "A programming language",
+        "A type of hardware",
+        "A database table"
+      ],
+      "answer": 0,
+      "explanation": "An algorithm is a finite sequence of steps that solves a problem."
+    },
+    {
+      "text": "Which of these is a boolean value in Python?",
+      "choices": [
+        "true",
+        "TRUE",
+        "True",
+        "yes"
+      ],
+      "answer": 2,
+      "explanation": "Python booleans are written True and False with a capital first letter."
+    },
+    {
+      "text": "What does OOP stand for?",
+      "choices": [
+        "Object-Oriented Programming",
+        "Ordered Operation Process",
+        "Open Output Protocol",
+        "Object Output Processing"
+      ],
+      "answer": 0,
+      "explanation": "OOP is Object-Oriented Programming, built around objects and classes."
+    },
+    {
+      "text": "In object-oriented programming, what is a class?",
+      "choices": [
+        "A single value",
+        "A blueprint for creating objects",
+        "A kind of loop",
+        "A file extension"
+      ],
+      "answer": 1,
+      "explanation": "A class describes the data and behaviour that its objects will have."
+    },
+    {
+      "text": "Which HTTP status code means 'Not Found'?",
+      "choices": [
+        "200",
+        "301",
+        "404",
+        "500"
+      ],
+      "answer": 2,
+      "explanation": "404 tells the client that the requested resource does not exist."
+    },
+    {
+      "text": "Which Python collection type is immutable?",
+      "choices": [
+        "list",
+        "dict",
+        "set",
+        "tuple"
+      ],
+      "answer": 3,
+      "explanation": "A tuple cannot be changed after it is created."
+    },
+    {
+      "text": "What is the index of the first element of a Python list?",
+      "choices": [
+        "0",
+        "1",
+        "-1",
+        "It depends on the list"
+      ],
+      "answer": 0,
+      "explanation": "Python lists are zero-indexed, so the first element is at index 0."
+    },
+    {
+      "text": "What does API stand for?",
+      "choices": [
+        "Applied Program Integration",
+        "Application Programming Interface",
+        "Automated Process Input",
+        "Advanced Protocol Instruction"
+      ],
+      "answer": 1,
+      "explanation": "An API is an Application Programming Interface that lets programs talk to each other."
+    },
+    {
+      "text": "Which sorting algorithm repeatedly swaps adjacent elements that are in the wrong order?",
+      "choices": [
+        "Merge sort",
+        "Quick sort",
+        "Bubble sort",
+        "Binary sort"
+      ],
+      "answer": 2,
+      "explanation": "Bubble sort keeps swapping neighbouring elements until the list is sorted."
+    },
+    {
+      "text": "What is the decimal number 5 in binary?",
+      "choices": [
+        "100",
+        "101",
+        "110",
+        "111"
+      ],
+      "answer": 1,
+      "explanation": "5 = 4 + 1, which is 101 in binary."
+    },
+    {
+      "text": "What does a Git commit do?",
+      "choices": [
+        "Deletes a branch",
+        "Saves a snapshot of your changes in the history",
+        "Downloads a repository",
+        "Merges two branches"
+      ],
+      "answer": 1,
+      "explanation": "A commit records a snapshot of the staged changes in the repository history."
+    },
+    {
+      "text": "Which of these languages is normally run by an interpreter?",
+      "choices": [
+        "C",
+        "Rust",
+        "Go",
+        "Python"
+      ],
+      "answer": 3,
+      "explanation": "Python code is executed by the Python interpreter instead of being compiled ahead of time."
+    },
+    {
+      "text": "What does the == operator do in Python?",
+      "choices": [
+        "Assigns a value",
+        "Adds two values",
+        "Checks whether two values are equal",
+        "Declares a variable"
+      ],
+      "answer": 2,
+      "explanation": "== compares two values and returns True if they are equal."
+    },
+    {
+      "text": "What does debugging mean?",
+      "choices": [
+        "Finding and fixing errors in code",
+        "Writing documentation",
+        "Deploying an app",
+        "Compressing files"
+      ],
+      "answer": 0,
+      "explanation": "Debugging is the process of finding and fixing bugs."
+    },
+    {
+      "text": "Which Python keywords are used to handle exceptions?",
+      "choices": [
+        "try / except",
+        "catch / throw",
+        "error / handle",
+        "if / else"
+      ],
+      "answer": 0,
+      "explanation": "Code that may fail goes in a try block and the error is handled in except."
+    }
+  ]
+}
