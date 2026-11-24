@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Page not found · QuizHub{% endblock %}
+
+{% block content %}
+<section class="error-page">
+  <p class="error-code" aria-hidden="true">404</p>
+  <h1>We couldn't find that page</h1>
+  <p class="lead">The link may be broken, or the quiz you are looking for does not exist.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary btn-lg" href="{{ url_for('home') }}">Back to home</a>
+    <a class="btn btn-ghost btn-lg" href="{{ url_for('quiz.topics') }}">Browse topics</a>
+  </div>
+</section>
+{% endblock %}

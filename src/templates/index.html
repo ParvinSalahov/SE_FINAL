@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome · QuizHub{% endblock %}
+
+{% block content %}
+{% if player %}
+<section class="hero">
+  <p class="eyebrow">Welcome back</p>
+  <h1>Hi, {{ player.nickname }}!</h1>
+  <p class="lead">Ready for another round? Pick a topic and test yourself.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary btn-lg" href="{{ url_for('quiz.topics') }}">Choose a topic</a>
+    <form method="post" action="{{ url_for('auth.leave') }}">
+      <button class="btn btn-ghost btn-lg" type="submit">Leave</button>
+    </form>
+  </div>
+</section>
+{% else %}
+<section class="hero">
+  <p class="eyebrow">Quiz platform</p>
+  <h1>Test your knowledge with QuizHub</h1>
+  <p class="lead">Choose a nickname and start answering. No password needed.</p>
+  <form class="enter-form" method="post" action="{{ url_for('auth.enter') }}">
+    <label class="field-label" for="nickname">Your nickname</label>
+    <div class="enter-row">
+      <input id="nickname" name="nickname" type="text"
+             minlength="2" maxlength="20" pattern="[A-Za-z0-9_]{2,20}"
+             placeholder="e.g. quiz_master" autocomplete="nickname" autofocus required
+             aria-describedby="nickname-hint">
+      <button class="btn btn-primary" type="submit">Start</button>
+    </div>
+    <p id="nickname-hint" class="hint">2 to 20 characters: letters, digits or underscore.</p>
+  </form>
+</section>
+{% endif %}
+
+<ol class="steps" aria-label="How it works">
+  <li class="step">
+    <span class="step-num" aria-hidden="true">1</span>
+    <h2>Pick a topic</h2>
+    <p>Choose the subject you want to be quizzed on.</p>
+  </li>
+  <li class="step">
+    <span class="step-num" aria-hidden="true">2</span>
+    <h2>Take the quiz</h2>
+    <p>Answer multiple-choice questions at your own pace.</p>
+  </li>
+  <li class="step">
+    <span class="step-num" aria-hidden="true">3</span>
+    <h2>Review and compete</h2>
+    <p>See explanations and climb the leaderboard.</p>
+  </li>
+</ol>
+{% endblock %}

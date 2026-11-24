@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Topics · QuizHub{% endblock %}
+
+{% block content %}
+<header class="page-head">
+  <p class="eyebrow">{% if player %}Playing as {{ player.nickname }}{% else %}Quiz topics{% endif %}</p>
+  <h1>Choose a topic</h1>
+  <p class="lead">Each quiz is graded on the server and comes with explanations.</p>
+</header>
+
+{% if topics %}
+<ul class="topic-grid">
+  {% for topic in topics %}
+  <li class="topic-card">
+    <span class="badge">{{ topic.n_questions }} {{ 'question' if topic.n_questions == 1 else 'questions' }}</span>
+    <h2>{{ topic.title }}</h2>
+    <p>{{ topic.description }}</p>
+    <a class="btn btn-primary" href="{{ url_for('quiz.take', slug=topic.slug) }}">Start quiz</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">No topics are available yet. Please check back soon.</p>
+{% endif %}
+{% endblock %}

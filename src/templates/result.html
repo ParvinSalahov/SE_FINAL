@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Result · {{ attempt.topic_title }} · QuizHub{% endblock %}
+
+{% block content %}
+<section class="result-banner">
+  <div class="score-ring" style="--pct: {{ pct }}" role="img" aria-label="{{ pct }} percent correct">
+    <span class="score-pct">{{ pct }}%</span>
+  </div>
+  <div class="result-text">
+    <p class="eyebrow">{{ attempt.topic_title }}</p>
+    <h1>You scored {{ attempt.score }} / {{ attempt.total }}</h1>
+    <p class="lead">
+      {% if pct >= 80 %}Excellent work!
+      {% elif pct >= 50 %}Good job, a little more practice and you will ace it.
+      {% else %}Keep practising, you will get there.{% endif %}
+    </p>
+    <div class="result-actions">
+      <a class="btn btn-primary" href="{{ url_for('quiz.take', slug=attempt.topic_slug) }}">Try again</a>
+      <a class="btn btn-ghost" href="/leaderboard">Leaderboard</a>
+      <a class="btn btn-ghost" href="{{ url_for('quiz.topics') }}">All topics</a>
+    </div>
+  </div>
+</section>
+
+<h2 class="section-title">Review</h2>
+<ol class="review">
+  {% for r in review %}
+  <li class="review-item {{ 'is-correct' if r.is_correct else 'is-wrong' }}">
+    <div class="review-head">
+      <span class="badge {{ 'badge-ok' if r.is_correct else 'badge-bad' }}">
+        {% if r.is_correct %}✓ Correct{% elif r.your_answer is none %}✗ Not answered{% else %}✗ Wrong{% endif %}
+      </span>
+      <span class="review-num">Question {{ loop.index }}</span>
+    </div>
+    <h3>{{ r.question }}</h3>
+    <dl class="answers">
+      <div>
+        <dt>Your answer</dt>
+        <dd>{% if r.your_answer is none %}<em>No answer</em>{% else %}{{ r.your_answer }}{% endif %}</dd>
+      </div>
+      <div>
+        <dt>Right answer</dt>
+        <dd>{{ r.right_answer }}</dd>
+      </div>
+    </dl>
+    {% if r.explanation %}
+    <p class="explanation"><strong>Why:</strong> {{ r.explanation }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}
