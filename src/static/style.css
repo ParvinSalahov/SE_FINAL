@@ -324,3 +324,28 @@ input[type="text"]:focus { outline: 3px solid var(--primary); outline-offset: 1p
   color: var(--primary-strong);
   font-weight: 800;
 }
+
+/* ---------- Topics page ---------- */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.topic-card:hover { transform: translateY(-3px); border-color: var(--primary); }
+.topic-card h2 { margin-top: 0.4rem; }
+.topic-card p { flex: 1; margin-bottom: 1rem; color: var(--muted); }
