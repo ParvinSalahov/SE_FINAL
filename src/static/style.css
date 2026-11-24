@@ -349,3 +349,70 @@ input[type="text"]:focus { outline: 3px solid var(--primary); outline-offset: 1p
 .topic-card:hover { transform: translateY(-3px); border-color: var(--primary); }
 .topic-card h2 { margin-top: 0.4rem; }
 .topic-card p { flex: 1; margin-bottom: 1rem; color: var(--muted); }
+
+/* ---------- Quiz page ---------- */
+.quiz-form { display: grid; gap: 1.1rem; }
+
+.question {
+  margin: 0;
+  padding: 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.question legend {
+  float: left;           /* lets a long question wrap like normal text */
+  width: 100%;
+  margin: 0 0 0.9rem;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.question legend + * { clear: both; }
+
+.q-num {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.65rem;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-size: 0.9rem;
+  vertical-align: 1px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 48px;
+  margin-top: 0.55rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.option:hover { border-color: var(--primary); }
+.option input { width: 1.15rem; height: 1.15rem; margin: 0; accent-color: var(--primary); flex: none; }
+.option:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  font-weight: 600;
+}
+.option:has(input:focus-visible) { outline: 3px solid var(--primary); outline-offset: 2px; }
+
+.quiz-submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.quiz-submit .hint { margin: 0; }
