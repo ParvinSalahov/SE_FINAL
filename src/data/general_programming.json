@@ -1,0 +1,62 @@
+{
+  "slug": "general_programming",
+  "title": "General Programming",
+  "description": "Core programming concepts: data structures, algorithms, Python, Git and the web.",
+  "questions": [
+    {
+      "text": "What does CPU stand for?",
+      "choices": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Central Program Utility",
+        "Core Processing Updater"
+      ],
+      "answer": 0,
+      "explanation": "CPU stands for Central Processing Unit, the part of a computer that executes instructions."
+    },
+    {
+      "text": "Which data structure follows the LIFO (last in, first out) principle?",
+      "choices": [
+        "Queue",
+        "Linked list",
+        "Array",
+        "Stack"
+      ],
+      "answer": 3,
+      "explanation": "In a stack the last element pushed is the first one popped."
+    },
+    {
+      "text": "Which data structure follows the FIFO (first in, first out) principle?",
+      "choices": [
+        "Stack",
+        "Tree",
+        "Graph",
+        "Queue"
+      ],
+      "answer": 3,
+      "explanation": "In a queue the first element added is the first one removed."
+    },
+    {
+      "text": "What does HTML stand for?",
+      "choices": [
+        "HyperText Markup Language",
+        "High Tech Modern Language",
+        "HyperTransfer Markup Logic",
+        "Home Tool Markup Language"
+      ],
+      "answer": 0,
+      "explanation": "HTML is the HyperText Markup Language used to structure web pages."
+    },
+    {
+      "text": "Which symbol starts a single-line comment in Python?",
+      "choices": [
+        "//",
+        "#",
+        "--",
+        "/*"
+      ],
+      "answer": 1,
+      "explanation": "Python comments start with # and continue to the end of the line."
+    }
+  ]
+}
