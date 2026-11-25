@@ -13,5 +13,10 @@ def greet(name):
     """Returns a personalized greeting."""
     return f"Hello, {name}!"
 
+@app.route("/lobby")
+def lobby():
+    """Returns a simple message for the lobby route."""
+    return "Welcome to the lobby!"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
