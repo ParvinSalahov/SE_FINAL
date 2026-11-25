@@ -1,0 +1,52 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS topic (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS question (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    topic_id INTEGER NOT NULL,
+    text TEXT NOT NULL,
+    explanation TEXT NOT NULL,
+    FOREIGN KEY (topic_id) REFERENCES topic(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS choice (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question_id INTEGER NOT NULL,
+    text TEXT NOT NULL,
+    is_correct INTEGER NOT NULL DEFAULT 0 CHECK (is_correct IN (0, 1)),
+    FOREIGN KEY (question_id) REFERENCES question(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS player (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nickname TEXT NOT NULL UNIQUE,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS attempt (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player_id INTEGER NOT NULL,
+    topic_id INTEGER NOT NULL,
+    score INTEGER NOT NULL,
+    total INTEGER NOT NULL,
+    taken_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (player_id) REFERENCES player(id),
+    FOREIGN KEY (topic_id) REFERENCES topic(id)
+);
+
+CREATE TABLE IF NOT EXISTS attempt_answer (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    attempt_id INTEGER NOT NULL,
+    question_id INTEGER NOT NULL,
+    choice_id INTEGER,
+    is_correct INTEGER NOT NULL DEFAULT 0 CHECK (is_correct IN (0, 1)),
+    FOREIGN KEY (attempt_id) REFERENCES attempt(id) ON DELETE CASCADE,
+    FOREIGN KEY (question_id) REFERENCES question(id),
+    FOREIGN KEY (choice_id) REFERENCES choice(id)
+);
