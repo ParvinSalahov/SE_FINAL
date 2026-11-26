@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Leaderboard · QuizHub{% endblock %}
+
+{% block content %}
+<header class="page-head">
+  <p class="eyebrow">Best scores</p>
+  <h1>Leaderboard</h1>
+  <p class="lead">The best result of each player, per topic.</p>
+</header>
+
+{% if rows %}
+{# rows arrive ordered by topic, then best score; groupby keeps that order inside each topic #}
+{% for group in rows|groupby('topic') %}
+<section class="board">
+  <h2 class="board-title">{{ group.grouper }}</h2>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th scope="col" class="col-rank">Rank</th>
+          <th scope="col">Player</th>
+          <th scope="col" class="col-num">Best score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in group.list %}
+        {% set pct = (row.best * 100 / row.total)|round|int if row.total else 0 %}
+        <tr>
+          <td class="col-rank">
+            {% if loop.index <= 3 %}<span class="medal medal-{{ loop.index }}">{{ loop.index }}</span>{% else %}{{ loop.index }}{% endif %}
+          </td>
+          <td class="col-name">{{ row.nickname }}</td>
+          <td class="col-num">
+            <span class="score-cell">
+              <span class="meter" aria-hidden="true"><span style="width: {{ pct }}%"></span></span>
+              <span class="score-num">{{ row.best }} / {{ row.total }}</span>
+            </span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endfor %}
+{% else %}
+<div class="empty">
+  <p>No scores yet. Be the first on the leaderboard!</p>
+  <a class="btn btn-primary" href="{{ url_for('quiz.topics') }}">Take a quiz</a>
+</div>
+{% endif %}
+{% endblock %}
