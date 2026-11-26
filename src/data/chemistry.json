@@ -1,0 +1,227 @@
+{
+  "slug": "chemistry",
+  "title": "Chemistry",
+  "description": "Elements, the periodic table, bonds, acids and reactions.",
+  "questions": [
+    {
+      "text": "What is the chemical formula of water?",
+      "choices": [
+        "H₂O₂",
+        "CO₂",
+        "H₂O",
+        "NaCl"
+      ],
+      "answer": 2,
+      "explanation": "A water molecule has two hydrogen atoms and one oxygen atom."
+    },
+    {
+      "text": "The atomic number of an element is the number of:",
+      "choices": [
+        "Protons plus neutrons",
+        "Neutrons",
+        "Electrons in the outer shell",
+        "Protons"
+      ],
+      "answer": 3,
+      "explanation": "The number of protons defines the element; protons plus neutrons is the mass number."
+    },
+    {
+      "text": "What is the pH of pure water at 25 °C?",
+      "choices": [
+        "0",
+        "7",
+        "14",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Pure water is neutral, with pH 7."
+    },
+    {
+      "text": "Which gas makes up most of the Earth's atmosphere?",
+      "choices": [
+        "Nitrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 0,
+      "explanation": "Air is about 78% nitrogen and 21% oxygen."
+    },
+    {
+      "text": "What is the chemical symbol for sodium?",
+      "choices": [
+        "So",
+        "S",
+        "Na",
+        "Sd"
+      ],
+      "answer": 2,
+      "explanation": "Na comes from the Latin name 'natrium'; S is sulfur."
+    },
+    {
+      "text": "What is the chemical formula of table salt?",
+      "choices": [
+        "NaCl",
+        "KCl",
+        "NaOH",
+        "CaCO₃"
+      ],
+      "answer": 0,
+      "explanation": "Table salt is sodium chloride."
+    },
+    {
+      "text": "Which of these is a noble gas?",
+      "choices": [
+        "Hydrogen",
+        "Nitrogen",
+        "Chlorine",
+        "Neon"
+      ],
+      "answer": 3,
+      "explanation": "Neon is in group 18 with helium, argon, krypton, xenon and radon."
+    },
+    {
+      "text": "What is the approximate value of the Avogadro constant (per mole)?",
+      "choices": [
+        "3.0 × 10⁸",
+        "6.022 × 10²³",
+        "1.6 × 10⁻¹⁹",
+        "9.81"
+      ],
+      "answer": 1,
+      "explanation": "One mole contains about 6.022 × 10²³ particles."
+    },
+    {
+      "text": "A bond in which atoms share electrons is called:",
+      "choices": [
+        "An ionic bond",
+        "A covalent bond",
+        "A metallic bond",
+        "A hydrogen bond"
+      ],
+      "answer": 1,
+      "explanation": "Covalent bonds share electron pairs; ionic bonds transfer electrons."
+    },
+    {
+      "text": "A solution with a pH below 7 is:",
+      "choices": [
+        "Saturated",
+        "Basic (alkaline)",
+        "Neutral",
+        "Acidic"
+      ],
+      "answer": 3,
+      "explanation": "Below 7 is acidic, 7 is neutral, above 7 is basic."
+    },
+    {
+      "text": "Which is the lightest element?",
+      "choices": [
+        "Hydrogen",
+        "Helium",
+        "Lithium",
+        "Carbon"
+      ],
+      "answer": 0,
+      "explanation": "Hydrogen has one proton and is the lightest element."
+    },
+    {
+      "text": "What is the approximate molar mass of CO₂?",
+      "choices": [
+        "32 g/mol",
+        "28 g/mol",
+        "44 g/mol",
+        "56 g/mol"
+      ],
+      "answer": 2,
+      "explanation": "12 (carbon) + 2 × 16 (oxygen) = 44 g/mol."
+    },
+    {
+      "text": "Which gas is produced when zinc reacts with hydrochloric acid?",
+      "choices": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Chlorine",
+        "Hydrogen"
+      ],
+      "answer": 3,
+      "explanation": "Zn + 2HCl → ZnCl₂ + H₂."
+    },
+    {
+      "text": "What are the horizontal rows of the periodic table called?",
+      "choices": [
+        "Families",
+        "Groups",
+        "Periods",
+        "Blocks"
+      ],
+      "answer": 2,
+      "explanation": "Rows are periods; columns are groups (also called families)."
+    },
+    {
+      "text": "Which element has the symbol Fe?",
+      "choices": [
+        "Fluorine",
+        "Iron",
+        "Francium",
+        "Lead"
+      ],
+      "answer": 1,
+      "explanation": "Fe comes from the Latin 'ferrum'; fluorine is F and lead is Pb."
+    },
+    {
+      "text": "What does a catalyst do?",
+      "choices": [
+        "Speeds up a reaction without being used up",
+        "Is a reactant that is always used up",
+        "Stops a reaction permanently",
+        "Changes which products are formed"
+      ],
+      "answer": 0,
+      "explanation": "A catalyst lowers the activation energy and is left unchanged at the end."
+    },
+    {
+      "text": "What is the change from solid directly to gas called?",
+      "choices": [
+        "Sublimation",
+        "Condensation",
+        "Evaporation",
+        "Melting"
+      ],
+      "answer": 0,
+      "explanation": "Dry ice (solid CO₂) sublimes without becoming liquid."
+    },
+    {
+      "text": "Isotopes of the same element differ in their number of:",
+      "choices": [
+        "Protons",
+        "Neutrons",
+        "Electrons",
+        "Atomic number"
+      ],
+      "answer": 1,
+      "explanation": "Isotopes have the same protons but different neutrons, so different mass numbers."
+    },
+    {
+      "text": "What is the reaction between an acid and a base called?",
+      "choices": [
+        "Oxidation",
+        "Combustion",
+        "Neutralisation",
+        "Polymerisation"
+      ],
+      "answer": 2,
+      "explanation": "Acid + base → salt + water."
+    },
+    {
+      "text": "What is the electric charge of a proton?",
+      "choices": [
+        "It depends on the element",
+        "Negative",
+        "No charge",
+        "Positive"
+      ],
+      "answer": 3,
+      "explanation": "Every proton carries one positive elementary charge."
+    }
+  ]
+}
