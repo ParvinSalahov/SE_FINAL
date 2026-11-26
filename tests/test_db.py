@@ -34,7 +34,9 @@ def test_schema_and_seed_are_correct(tmp_path):
             "attempt_answer",
         } <= tables
 
-        assert conn.execute("SELECT COUNT(*) FROM topic").fetchone()[0] == 1
+        data_dir = os.path.join(os.path.dirname(__file__), "../src/data")
+        n_files = len([f for f in os.listdir(data_dir) if f.endswith(".json")])
+        assert conn.execute("SELECT COUNT(*) FROM topic").fetchone()[0] == n_files
 
         topic_counts = conn.execute(
             """
