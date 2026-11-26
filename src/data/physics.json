@@ -1,0 +1,227 @@
+{
+  "slug": "physics",
+  "title": "Physics",
+  "description": "Forces, energy, motion, electricity, waves and units.",
+  "questions": [
+    {
+      "text": "What is the SI unit of force?",
+      "choices": [
+        "Newton (N)",
+        "Joule (J)",
+        "Watt (W)",
+        "Pascal (Pa)"
+      ],
+      "answer": 0,
+      "explanation": "One newton accelerates 1 kg at 1 m/s²."
+    },
+    {
+      "text": "Which formula is Newton's second law?",
+      "choices": [
+        "F = m · a",
+        "E = m · c²",
+        "p = m / v",
+        "F = m / a"
+      ],
+      "answer": 0,
+      "explanation": "Net force equals mass times acceleration."
+    },
+    {
+      "text": "What is the acceleration due to gravity near the Earth's surface?",
+      "choices": [
+        "About 1.6 m/s²",
+        "About 9.8 m/s²",
+        "About 98 m/s²",
+        "About 3.0 × 10⁸ m/s²"
+      ],
+      "answer": 1,
+      "explanation": "Near the surface objects in free fall speed up by about 9.8 m/s every second."
+    },
+    {
+      "text": "What is the formula for kinetic energy?",
+      "choices": [
+        "m v",
+        "m g h",
+        "½ m v²",
+        "½ m v"
+      ],
+      "answer": 2,
+      "explanation": "Kinetic energy grows with the square of speed: ½ m v²."
+    },
+    {
+      "text": "What is the SI unit of energy?",
+      "choices": [
+        "Volt (V)",
+        "Newton (N)",
+        "Watt (W)",
+        "Joule (J)"
+      ],
+      "answer": 3,
+      "explanation": "Energy and work are measured in joules."
+    },
+    {
+      "text": "Which equation is Ohm's law?",
+      "choices": [
+        "V = I / R",
+        "P = I · R",
+        "V = I · R",
+        "I = V · R"
+      ],
+      "answer": 2,
+      "explanation": "Voltage equals current times resistance."
+    },
+    {
+      "text": "One watt is equal to:",
+      "choices": [
+        "One coulomb per second",
+        "One newton per metre",
+        "One volt per ampere",
+        "One joule per second"
+      ],
+      "answer": 3,
+      "explanation": "Power is energy per unit time."
+    },
+    {
+      "text": "Which of these is a vector quantity?",
+      "choices": [
+        "Speed",
+        "Velocity",
+        "Mass",
+        "Temperature"
+      ],
+      "answer": 1,
+      "explanation": "Velocity has both size and direction; speed has only size."
+    },
+    {
+      "text": "What is the approximate speed of sound in air at room temperature?",
+      "choices": [
+        "About 343 m/s",
+        "About 3 × 10⁸ m/s",
+        "About 30 m/s",
+        "About 1,500 m/s"
+      ],
+      "answer": 0,
+      "explanation": "Sound travels about 343 m/s in air; about 1,500 m/s is its speed in water."
+    },
+    {
+      "text": "A car travels 120 km in 2 hours. What is its average speed?",
+      "choices": [
+        "120 km/h",
+        "240 km/h",
+        "60 km/h",
+        "30 km/h"
+      ],
+      "answer": 2,
+      "explanation": "Average speed = distance / time = 120 km / 2 h = 60 km/h."
+    },
+    {
+      "text": "What does Newton's third law say?",
+      "choices": [
+        "Every action has an equal and opposite reaction",
+        "Force equals mass times acceleration",
+        "An object at rest stays at rest unless a force acts on it",
+        "Energy cannot be created or destroyed"
+      ],
+      "answer": 0,
+      "explanation": "Forces come in pairs of equal size acting in opposite directions on two bodies."
+    },
+    {
+      "text": "What is the SI unit of frequency?",
+      "choices": [
+        "Tesla (T)",
+        "Decibel (dB)",
+        "Metre (m)",
+        "Hertz (Hz)"
+      ],
+      "answer": 3,
+      "explanation": "One hertz is one cycle per second."
+    },
+    {
+      "text": "What is absolute zero in degrees Celsius?",
+      "choices": [
+        "0 °C",
+        "−273.15 °C",
+        "−100 °C",
+        "−373.15 °C"
+      ],
+      "answer": 1,
+      "explanation": "Absolute zero, 0 K, equals −273.15 °C."
+    },
+    {
+      "text": "Which formula gives momentum?",
+      "choices": [
+        "p = m · a",
+        "p = m · v",
+        "p = ½ m v²",
+        "p = F · d"
+      ],
+      "answer": 1,
+      "explanation": "Momentum is mass times velocity."
+    },
+    {
+      "text": "What is the SI unit of electric charge?",
+      "choices": [
+        "Volt (V)",
+        "Ampere (A)",
+        "Ohm (Ω)",
+        "Coulomb (C)"
+      ],
+      "answer": 3,
+      "explanation": "One coulomb is the charge moved by 1 A in 1 s."
+    },
+    {
+      "text": "Which formula gives gravitational potential energy near the Earth?",
+      "choices": [
+        "m · g · h",
+        "½ m v²",
+        "m · a",
+        "m / (g · h)"
+      ],
+      "answer": 0,
+      "explanation": "Lifting mass m by height h stores energy m g h."
+    },
+    {
+      "text": "Which particle has a negative electric charge?",
+      "choices": [
+        "Neutron",
+        "Proton",
+        "Electron",
+        "Photon"
+      ],
+      "answer": 2,
+      "explanation": "Electrons are negative, protons positive, neutrons and photons neutral."
+    },
+    {
+      "text": "What is the bending of light as it passes from air into water called?",
+      "choices": [
+        "Dispersion",
+        "Reflection",
+        "Diffraction",
+        "Refraction"
+      ],
+      "answer": 3,
+      "explanation": "Light changes speed in a new medium, which bends its path."
+    },
+    {
+      "text": "How is work calculated?",
+      "choices": [
+        "Force ÷ area",
+        "Mass × velocity",
+        "Force × distance moved in the direction of the force",
+        "Power × distance"
+      ],
+      "answer": 2,
+      "explanation": "Work W = F · d when the force acts along the motion."
+    },
+    {
+      "text": "What is pressure?",
+      "choices": [
+        "Force times area",
+        "Force divided by area",
+        "Mass divided by volume",
+        "Energy divided by time"
+      ],
+      "answer": 1,
+      "explanation": "p = F / A, measured in pascals; mass divided by volume is density."
+    }
+  ]
+}
