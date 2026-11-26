@@ -37,9 +37,9 @@ def init_schema(conn):
 
 
 def seed_if_empty(conn):
-    topic_count = conn.execute("SELECT COUNT(*) FROM topic").fetchone()[0]
-    if topic_count:
-        return
+    # Insert every topic from src/data whose slug is not in the database yet,
+    # so an existing quiz.db also picks up topics added after it was created.
+    existing = {row[0] for row in conn.execute("SELECT slug FROM topic")}
 
     for filename in sorted(os.listdir(DATA_DIR)):
         if not filename.endswith(".json"):
@@ -48,6 +48,9 @@ def seed_if_empty(conn):
         path = os.path.join(DATA_DIR, filename)
         with open(path, encoding="utf-8") as data_file:
             data = json.load(data_file)
+
+        if data["slug"] in existing:
+            continue
 
         cursor = conn.execute(
             "INSERT INTO topic (slug, title, description) VALUES (?, ?, ?)",
