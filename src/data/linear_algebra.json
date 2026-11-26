@@ -1,0 +1,227 @@
+{
+  "slug": "linear_algebra",
+  "title": "Linear Algebra",
+  "description": "Vectors, matrices, determinants, eigenvalues and bases.",
+  "questions": [
+    {
+      "text": "What is the dot product of (1, 2, 3) and (4, 5, 6)?",
+      "choices": [
+        "32",
+        "21",
+        "15",
+        "(4, 10, 18)"
+      ],
+      "answer": 0,
+      "explanation": "1·4 + 2·5 + 3·6 = 4 + 10 + 18 = 32."
+    },
+    {
+      "text": "What is the determinant of the matrix [[1, 2], [3, 4]]?",
+      "choices": [
+        "10",
+        "2",
+        "−2",
+        "−10"
+      ],
+      "answer": 2,
+      "explanation": "For [[a, b], [c, d]] the determinant is ad − bc = 4 − 6 = −2."
+    },
+    {
+      "text": "If A is 2 × 3 and B is 3 × 4, what is the size of AB?",
+      "choices": [
+        "AB is not defined",
+        "3 × 3",
+        "4 × 2",
+        "2 × 4"
+      ],
+      "answer": 3,
+      "explanation": "The inner sizes (3) match, and the result takes the outer sizes: 2 × 4."
+    },
+    {
+      "text": "What does the identity matrix look like?",
+      "choices": [
+        "All entries equal to 0",
+        "All entries equal to 1",
+        "Ones on the main diagonal and zeros elsewhere",
+        "Ones on the anti-diagonal"
+      ],
+      "answer": 2,
+      "explanation": "The identity matrix I has 1s on the main diagonal and satisfies AI = IA = A."
+    },
+    {
+      "text": "A square matrix is invertible exactly when:",
+      "choices": [
+        "Its determinant is 1",
+        "Its determinant is not zero",
+        "It is symmetric",
+        "All its entries are positive"
+      ],
+      "answer": 1,
+      "explanation": "A zero determinant means the columns are dependent and no inverse exists."
+    },
+    {
+      "text": "What is the size of the transpose of a 3 × 2 matrix?",
+      "choices": [
+        "2 × 3",
+        "3 × 2",
+        "3 × 3",
+        "2 × 2"
+      ],
+      "answer": 0,
+      "explanation": "Transposing swaps rows and columns."
+    },
+    {
+      "text": "What is the length (norm) of the vector (3, 4)?",
+      "choices": [
+        "5",
+        "7",
+        "25",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "√(3² + 4²) = √25 = 5."
+    },
+    {
+      "text": "Two non-zero vectors are orthogonal when:",
+      "choices": [
+        "Their dot product is 1",
+        "Their dot product is 0",
+        "They have the same length",
+        "One is a multiple of the other"
+      ],
+      "answer": 1,
+      "explanation": "Orthogonal (perpendicular) vectors have a dot product of zero."
+    },
+    {
+      "text": "What is an eigenvector of a matrix A?",
+      "choices": [
+        "A vector whose entries are all equal",
+        "Any vector of length 1",
+        "A non-zero vector v with Av = λv for some scalar λ",
+        "A vector orthogonal to every row of A"
+      ],
+      "answer": 2,
+      "explanation": "A only stretches an eigenvector by its eigenvalue λ, without changing its direction."
+    },
+    {
+      "text": "What are the eigenvalues of [[2, 0], [0, 3]]?",
+      "choices": [
+        "5 and 6",
+        "0 and 5",
+        "1 and 6",
+        "2 and 3"
+      ],
+      "answer": 3,
+      "explanation": "The eigenvalues of a diagonal matrix are its diagonal entries."
+    },
+    {
+      "text": "What is the rank of [[1, 2], [2, 4]]?",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "The second row is twice the first, so only one row is linearly independent."
+    },
+    {
+      "text": "What is the trace of [[5, 1], [2, 7]]?",
+      "choices": [
+        "6",
+        "35",
+        "33",
+        "12"
+      ],
+      "answer": 3,
+      "explanation": "The trace is the sum of the main diagonal: 5 + 7 = 12."
+    },
+    {
+      "text": "In general, matrix multiplication is:",
+      "choices": [
+        "Commutative (AB = BA)",
+        "Not commutative (AB ≠ BA)",
+        "Only defined for square matrices",
+        "The same as multiplying entry by entry"
+      ],
+      "answer": 1,
+      "explanation": "For most matrices AB and BA are different, and one of them may not even be defined."
+    },
+    {
+      "text": "What is det(AB) for square matrices A and B?",
+      "choices": [
+        "det(A) · det(B)",
+        "det(A) + det(B)",
+        "det(A) / det(B)",
+        "det(A) − det(B)"
+      ],
+      "answer": 0,
+      "explanation": "The determinant is multiplicative: det(AB) = det(A) det(B)."
+    },
+    {
+      "text": "What is (AB)ᵀ equal to?",
+      "choices": [
+        "AB",
+        "AᵀBᵀ",
+        "BᵀAᵀ",
+        "BA"
+      ],
+      "answer": 2,
+      "explanation": "The transpose of a product reverses the order: (AB)ᵀ = BᵀAᵀ."
+    },
+    {
+      "text": "What can be said about the vectors (1, 0) and (0, 1) in R²?",
+      "choices": [
+        "They form a basis of R²",
+        "They are linearly dependent",
+        "They span only a line",
+        "Their dot product is 1"
+      ],
+      "answer": 0,
+      "explanation": "They are independent and every vector (x, y) is x(1, 0) + y(0, 1)."
+    },
+    {
+      "text": "What is the dimension of R³?",
+      "choices": [
+        "Infinite",
+        "1",
+        "9",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "R³ has a basis of three vectors, for example (1,0,0), (0,1,0), (0,0,1)."
+    },
+    {
+      "text": "What is the cross product (1, 0, 0) × (0, 1, 0)?",
+      "choices": [
+        "(0, 0, −1)",
+        "(0, 0, 1)",
+        "(1, 1, 0)",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "i × j = k by the right-hand rule."
+    },
+    {
+      "text": "Swapping two rows of a square matrix multiplies its determinant by:",
+      "choices": [
+        "0",
+        "−1",
+        "2",
+        "1 (it does not change)"
+      ],
+      "answer": 1,
+      "explanation": "Each row swap flips the sign of the determinant."
+    },
+    {
+      "text": "A set of vectors is linearly independent when:",
+      "choices": [
+        "Their sum is the zero vector",
+        "They all have the same length",
+        "They are all non-zero",
+        "Only the all-zero combination of them gives the zero vector"
+      ],
+      "answer": 3,
+      "explanation": "No vector in the set can be written as a combination of the others."
+    }
+  ]
+}
