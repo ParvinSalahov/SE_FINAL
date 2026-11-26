@@ -6,45 +6,34 @@
     {
       "text": "What does CPU stand for?",
       "choices": [
-        "Central Processing Unit",
-        "Computer Personal Unit",
         "Central Program Utility",
+        "Computer Personal Unit",
+        "Central Processing Unit",
         "Core Processing Updater"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "CPU stands for Central Processing Unit, the part of a computer that executes instructions."
     },
     {
       "text": "Which data structure follows the LIFO (last in, first out) principle?",
       "choices": [
-        "Queue",
+        "Stack",
         "Linked list",
         "Array",
-        "Stack"
-      ],
-      "answer": 3,
-      "explanation": "In a stack the last element pushed is the first one popped."
-    },
-    {
-      "text": "Which data structure follows the FIFO (first in, first out) principle?",
-      "choices": [
-        "Stack",
-        "Tree",
-        "Graph",
         "Queue"
       ],
-      "answer": 3,
-      "explanation": "In a queue the first element added is the first one removed."
+      "answer": 0,
+      "explanation": "In a stack the last element pushed is the first one popped."
     },
     {
       "text": "What does HTML stand for?",
       "choices": [
-        "HyperText Markup Language",
+        "Home Tool Markup Language",
         "High Tech Modern Language",
         "HyperTransfer Markup Logic",
-        "Home Tool Markup Language"
+        "HyperText Markup Language"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "HTML is the HyperText Markup Language used to structure web pages."
     },
     {
@@ -74,21 +63,21 @@
       "choices": [
         "O(n)",
         "O(n log n)",
-        "O(log n)",
-        "O(1)"
+        "O(1)",
+        "O(log n)"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "Binary search halves the search range each step, so it takes O(log n) time."
     },
     {
       "text": "What does a compiler do?",
       "choices": [
-        "Runs a program line by line",
         "Translates source code into machine code before it runs",
+        "Runs a program line by line",
         "Formats source code",
         "Stores variables in memory"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "A compiler translates the whole source code into machine code before execution."
     },
     {
@@ -114,28 +103,6 @@
       "explanation": "SQL is the Structured Query Language used to work with relational databases."
     },
     {
-      "text": "Which of these is a version control system?",
-      "choices": [
-        "Docker",
-        "Linux",
-        "Flask",
-        "Git"
-      ],
-      "answer": 3,
-      "explanation": "Git tracks changes to files and lets teams work together on the same code."
-    },
-    {
-      "text": "What is a variable in programming?",
-      "choices": [
-        "A named place in memory that stores a value",
-        "A value that can never change",
-        "A type of loop",
-        "A syntax error"
-      ],
-      "answer": 0,
-      "explanation": "A variable is a name that refers to a stored value."
-    },
-    {
       "text": "What type does the input() function return in Python?",
       "choices": [
         "int",
@@ -147,48 +114,15 @@
       "explanation": "input() always returns a string, even if the user types digits."
     },
     {
-      "text": "Which loop always runs its body at least once?",
-      "choices": [
-        "for",
-        "while",
-        "do-while",
-        "foreach"
-      ],
-      "answer": 2,
-      "explanation": "A do-while loop checks its condition after running the body."
-    },
-    {
       "text": "What is recursion?",
       "choices": [
         "A loop that never ends",
-        "Importing a module",
+        "A function that calls itself",
         "Copying a variable",
-        "A function that calls itself"
+        "Importing a module"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "Recursion is when a function solves a problem by calling itself on a smaller input."
-    },
-    {
-      "text": "What is an algorithm?",
-      "choices": [
-        "A step-by-step procedure for solving a problem",
-        "A programming language",
-        "A type of hardware",
-        "A database table"
-      ],
-      "answer": 0,
-      "explanation": "An algorithm is a finite sequence of steps that solves a problem."
-    },
-    {
-      "text": "Which of these is a boolean value in Python?",
-      "choices": [
-        "true",
-        "TRUE",
-        "True",
-        "yes"
-      ],
-      "answer": 2,
-      "explanation": "Python booleans are written True and False with a capital first letter."
     },
     {
       "text": "What does OOP stand for?",
@@ -204,23 +138,23 @@
     {
       "text": "In object-oriented programming, what is a class?",
       "choices": [
-        "A single value",
         "A blueprint for creating objects",
+        "A single value",
         "A kind of loop",
         "A file extension"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "A class describes the data and behaviour that its objects will have."
     },
     {
       "text": "Which HTTP status code means 'Not Found'?",
       "choices": [
         "200",
-        "301",
         "404",
+        "301",
         "500"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "404 tells the client that the requested resource does not exist."
     },
     {
@@ -228,32 +162,32 @@
       "choices": [
         "list",
         "dict",
-        "set",
-        "tuple"
+        "tuple",
+        "set"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "A tuple cannot be changed after it is created."
     },
     {
       "text": "What is the index of the first element of a Python list?",
       "choices": [
-        "0",
+        "It depends on the list",
         "1",
         "-1",
-        "It depends on the list"
+        "0"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Python lists are zero-indexed, so the first element is at index 0."
     },
     {
       "text": "What does API stand for?",
       "choices": [
         "Applied Program Integration",
-        "Application Programming Interface",
         "Automated Process Input",
+        "Application Programming Interface",
         "Advanced Protocol Instruction"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "An API is an Application Programming Interface that lets programs talk to each other."
     },
     {
@@ -261,10 +195,10 @@
       "choices": [
         "Merge sort",
         "Quick sort",
-        "Bubble sort",
-        "Binary sort"
+        "Binary sort",
+        "Bubble sort"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "Bubble sort keeps swapping neighbouring elements until the list is sorted."
     },
     {
@@ -277,50 +211,6 @@
       ],
       "answer": 1,
       "explanation": "5 = 4 + 1, which is 101 in binary."
-    },
-    {
-      "text": "What does a Git commit do?",
-      "choices": [
-        "Deletes a branch",
-        "Saves a snapshot of your changes in the history",
-        "Downloads a repository",
-        "Merges two branches"
-      ],
-      "answer": 1,
-      "explanation": "A commit records a snapshot of the staged changes in the repository history."
-    },
-    {
-      "text": "Which of these languages is normally run by an interpreter?",
-      "choices": [
-        "C",
-        "Rust",
-        "Go",
-        "Python"
-      ],
-      "answer": 3,
-      "explanation": "Python code is executed by the Python interpreter instead of being compiled ahead of time."
-    },
-    {
-      "text": "What does the == operator do in Python?",
-      "choices": [
-        "Assigns a value",
-        "Adds two values",
-        "Checks whether two values are equal",
-        "Declares a variable"
-      ],
-      "answer": 2,
-      "explanation": "== compares two values and returns True if they are equal."
-    },
-    {
-      "text": "What does debugging mean?",
-      "choices": [
-        "Finding and fixing errors in code",
-        "Writing documentation",
-        "Deploying an app",
-        "Compressing files"
-      ],
-      "answer": 0,
-      "explanation": "Debugging is the process of finding and fixing bugs."
     },
     {
       "text": "Which Python keywords are used to handle exceptions?",
