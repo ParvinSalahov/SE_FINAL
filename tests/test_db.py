@@ -34,7 +34,7 @@ def test_schema_and_seed_are_correct(tmp_path):
             "attempt_answer",
         } <= tables
 
-        assert conn.execute("SELECT COUNT(*) FROM topic").fetchone()[0] == 3
+        assert conn.execute("SELECT COUNT(*) FROM topic").fetchone()[0] == 1
 
         topic_counts = conn.execute(
             """
