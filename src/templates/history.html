@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}My history · QuizHub{% endblock %}
+
+{% block content %}
+<header class="page-head">
+  <p class="eyebrow">Your attempts</p>
+  <h1>My history</h1>
+  <p class="lead">Every quiz you have finished, newest first.</p>
+</header>
+
+{% if rows %}
+<div class="table-wrap">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Topic</th>
+        <th scope="col" class="col-num">Score</th>
+        <th scope="col" class="col-action"><span class="visually-hidden">Review</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+      {% set pct = (row.score * 100 / row.total)|round|int if row.total else 0 %}
+      <tr>
+        {# taken_at is stored as "YYYY-MM-DD HH:MM:SS"; show it without seconds #}
+        {% set taken = row.taken_at|string %}
+        <td class="col-date"><span class="nowrap">{{ taken[:10] }}</span> <span class="nowrap">{{ taken[11:16] }}</span></td>
+        <td class="col-name">{{ row.topic }}</td>
+        <td class="col-num">
+          <span class="score-cell">
+            <span class="meter" aria-hidden="true"><span style="width: {{ pct }}%"></span></span>
+            <span class="score-num">{{ row.score }} / {{ row.total }}</span>
+          </span>
+        </td>
+        <td class="col-action">
+          <a href="{{ url_for('quiz.result', attempt_id=row.id) }}">Review<span class="visually-hidden"> {{ row.topic }} attempt</span></a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<div class="empty">
+  <p>You have not finished any quiz yet.</p>
+  <a class="btn btn-primary" href="{{ url_for('quiz.topics') }}">Choose a topic</a>
+</div>
+{% endif %}
+{% endblock %}

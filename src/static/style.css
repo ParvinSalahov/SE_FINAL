@@ -526,3 +526,88 @@ input[type="text"]:focus { outline: 3px solid var(--primary); outline-offset: 1p
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ---------- Leaderboard and history ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.board + .board { margin-top: 2rem; }
+.board-title { margin-bottom: 0.75rem; }
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.data-table th,
+.data-table td {
+  padding: 0.8rem 1.1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+.data-table thead th {
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.data-table tbody tr + tr td { border-top: 1px solid var(--border); }
+.data-table tbody tr:hover td { background: var(--surface-2); }
+.data-table .col-rank { width: 4.5rem; text-align: center; font-weight: 700; color: var(--muted); }
+.data-table .col-num { text-align: right; }
+.data-table .col-name { font-weight: 600; white-space: normal; overflow-wrap: break-word; }
+.data-table .col-date { color: var(--muted); }
+.nowrap { white-space: nowrap; }
+.data-table .col-action { width: 1%; text-align: right; }
+.data-table .col-action a { font-weight: 700; text-decoration: none; }
+.data-table .col-action a:hover { text-decoration: underline; }
+
+.medal {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  color: #1a1d2e;
+}
+.medal-1 { background: #f6d365; }
+.medal-2 { background: #d7dbe6; }
+.medal-3 { background: #e7b48a; }
+
+.score-cell { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; }
+.score-num { min-width: 4.2em; text-align: right; }
+.meter {
+  display: inline-block;
+  width: 64px;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--border);
+}
+.meter span { display: block; height: 100%; border-radius: inherit; background: var(--primary); }
+
+@media (max-width: 480px) {
+  .data-table th,
+  .data-table td { padding: 0.7rem 0.55rem; }
+  .data-table .col-date { white-space: normal; }
+  .score-num { min-width: 0; }
+  .meter { display: none; }
+}
